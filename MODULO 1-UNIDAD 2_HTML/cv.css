@@ -1,0 +1,63 @@
+p{
+    color: red;
+    font-family: courier;
+    font-size: 18px;
+
+}
+h1{
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+}
+
+h4{
+    color: white;
+    background-color: palevioletred;
+}
+.destacados{
+    color: orangered;
+    font-size: 25px;
+    font-weight: bold;
+}
+.imagen{
+    width: 350px;
+    height: 350px;
+    border-radius: 300px;
+    background-color: blue;
+    margin-top: 50px;
+    margin-right: 1000px;
+    margin-bottom: 50px;
+    margin-left: 1000px;  
+}
+#uno{
+	/* position:static; */
+	margin:0 auto;
+	height:0%;
+	width: 100%;
+	border:1px solid #e81010;
+	margin-bottom:20px;
+	background-color: white;
+}
+#dos{
+	/* position:static; */
+	margin:0 auto;
+	height:0%;
+	width: 100%;
+	border:1px solid #e81010;
+	margin-bottom:20px;
+	background-color: white;
+}
+#tres{
+	/* position:static; */
+	margin:0 auto;
+	height:0%;
+	width: 100%;
+	border:1px solid #e81010;
+	margin-bottom:20px;
+	background-color: white;
+}
+
+
+
