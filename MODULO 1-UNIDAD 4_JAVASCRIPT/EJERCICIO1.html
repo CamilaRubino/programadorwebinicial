@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1</title>
+</head>
+<body>
+    <script>
+        distancia = parseInt(prompt('Ingrese la distancia en números para determinar el medio de transporte apropiado:', ''));
+        
+        if (distancia == 0 || distancia <=1000) {
+            document.write('El transporte apropiado es a pie.');
+        } else if (distancia == 1001 || distancia <=10000) {
+            document.write('El transporte apropiado es la bicibleta.');
+        } else if (distancia == 10001 || distancia <=30000) {
+            document.write('El transporte apropiado es el colectivo.');
+        } else if (distancia == 30001 || distancia <=100000) {
+            document.write('El transporte apropiado es el auto.');
+        } else if (distancia >=100001) {
+            document.write('El transporte apropiado es el avión.');
+        }   
+    
+    </script>
+    
+</body>
+</html>
