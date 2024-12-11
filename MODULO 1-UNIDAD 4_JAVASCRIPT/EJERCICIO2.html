@@ -6,19 +6,28 @@
     <title>EJERCICIO 2</title>
 </head>
 <body>
-    <script>
-        let x = 1;
-        const cuantos = 3;
-        let suma = 0;
+	<script>
+		
+		const numeros = ["1", "35", "12", "20"];
+        const mayor = Math.max(...numeros);
+        console.log("El numero mayor es ", mayor);
+		
+		//console.log(numeros); //["1", "35", "12", "20"]
+		
+		let seleccionado = 0;
+		console.log(numeros[seleccionado]);
+		
+		seleccionado = 3;
+		console.log(numeros[seleccionado]);
+		
 
-        while (x <= cuantos) {
-            const valor = parseInt(prompt(`Ingrese el valor ${x} de ${cuantos}:`, ''));
-			suma += valor;
-			x++;
-        }
-        document.write(`El mayor valor es ${suma}<br/>`);
+		for( let i = 0; i < numeros.length; i++){
+			console.log('tenemos los números: ' + numeros[i]);
+        
+		}
 
-    </script>
+
+	</script>
     
     
 </body>
