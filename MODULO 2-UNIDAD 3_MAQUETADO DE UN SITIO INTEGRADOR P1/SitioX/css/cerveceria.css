@@ -1,0 +1,61 @@
+/* font-family: "Alfa Slab One", cursive; */
+
+
+h1, h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+h3 {
+    font-family: "Tomorrow", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    
+}
+
+.hero {
+    background: url(../img/header.jpg) no-repeat; 
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+
+}
+footer {
+    background-color: #aaa;
+    font-size: 10px;
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lista-novedades li{
+    margin: 4px 0;
+}
+
+.lista-novedades li a {
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.testimonios {
+    background-color: rgb(231, 227, 227);
+    padding-bottom: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
