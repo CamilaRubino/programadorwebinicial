@@ -1,33 +1,45 @@
-
-h1 {
-    font-family: "Space Mono", serif;
-    font-size: 100px;
-}
+/*FUENTE:
+  font-family: "Funnel Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;*/
 
 h2 {
-    font-family: "Great Vibes", cursive;
-    font-size: 80px;
+    font-family: "Passion One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+h5 {
+    font-family: "Passion One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px; 
+}
+
+p {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
 }
 
 footer {
     background-color: #aaa;
     font-size: 10px;
 }
+.staff {
+    background: #efefef;
+}
+
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1.1; /*proporcion de la imagen (en alto y ancho)*/
+}
 
 
 
 
 
-  /*font-family: "Space Mono", serif;
-  font-weight: 400;
-  font-style: normal; 
-  ---FUENTE DE DISTRIBUIDORA--- 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  ---*/ 
-
-  /*font-family: "Passion One", serif;
-  font-weight: 400;
-  font-style: normal;
-  ---FUENTE DE MADEIRA---
-  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
-  ---*/
+  
