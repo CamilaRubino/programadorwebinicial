@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: '5f863abd8c6b2e', 
   resave: false,
-  saveUninitialied: true
+  saveUninitialized: true
 }))
 
 secured = async (req, res, next) => {

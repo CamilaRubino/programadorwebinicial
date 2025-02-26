@@ -2,11 +2,18 @@ var express = require('express');
 var router = express.Router();
 
 var nodemailer = require('nodemailer');
+var novedadesModel = require('../mmodels/novedadesModel');
 
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
+
+/* pasa a ser una función asincrónica*/
+router.get('/', async function(req, res, next) {
+
+  var novedades = await novedadesModel.getNovedades();
+
+  res.render('index', {
+    novedades
+  });
 });
 
 router.post('/', async(req, res, next) => {
