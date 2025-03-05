@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var nodemailer = require('nodemailer');
-var novedadesModel = require('../mmodels/novedadesModel');
+var novedadesModel = require('../models/novedadesModel');
 
 
 
