@@ -27,7 +27,7 @@
         <img src="img/CarpaAlbatros1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
         <div class="card-body">
           <h6 class="card-title">CARPAS</h6>
-          <a href="#" class="btn btn-primary">COMPRAR</a>
+          <a href="#" class="btn btn-primary">VER TODO</a>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
         <img src="img/ReelAlbatros1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
         <div class="card-body">
           <h6 class="card-title">REELES</h6>
-          <a href="#" class="btn btn-primary">COMPRAR AHORA</a>
+          <a href="#" class="btn btn-primary">VER TODO</a>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
         <img src="img/Rifle1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
         <div class="card-body">
           <h6 class="card-title">RIFLES</h6>
-          <a href="#" class="btn btn-primary">COMPRAR</a>
+          <a href="#" class="btn btn-primary">VER TODO</a>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@
       {{#each novedades}}
       <li>
         <a href="javascript:void(0);" data-toggle="modal" data-target="#Modal{{id}}">
-          <img src="/img/novedad1.jpg" style="width:100px; height:100px"> {{titulo}} </a>        
+          <img src="{{imagen}}" style="width:150px; height:100px"> {{titulo}} </a>        
       </li>
       {{/each}}
   </div>
@@ -77,7 +77,8 @@
           </button>
         </div>
         <div class="modal-body">  
-          <h6>{{subtitulo}}</h6>
+          <h2>{{subtitulo}}</h2>
+          <img src="{{imagen}}" style="width:150px; height:100px" />
           <p>{{cuerpo}}</p>        
         </div>        
       </div>
@@ -140,13 +141,14 @@
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        ¿Necesitas ayuda?
+        ¿Cómo realizo una compra?
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Acá encontraras cómo comprar, además de los tiempos y formas de envío</div>
+      <div class="accordion-body">Para realizar una compra deberá comunicarse llenando el formulario, y a la brevedad nos pondremos en contacto.</div>
     </div>
   </div>
+
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -155,7 +157,7 @@
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Somos una empresa familiar, apacionada por la pesca, surguida apartir de un
+      <div class="accordion-body">Somos una empresa familiar, apacionada por la pesca, que nació apartir de un
         emprendimiento , el cual va creciendo día tras día.</div>
     </div>
   </div>
