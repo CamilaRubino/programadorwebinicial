@@ -20,81 +20,123 @@
   </button>
 </div>
 
-<div class="container mt-4">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="img/CarpaAlbatros1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
-        <div class="card-body">
-          <h6 class="card-title">CARPAS</h6>
-          <a href="#" class="btn btn-primary">VER TODO</a>
+<div id="inicio" class="scroll_selection">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="img/CarpaAlbatros1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
+          <div class="card-body">
+            <h5 class="card-title">CAMPING</h5>
+            <a href="#" class="btn btn-primary">VER TODO</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="img/ReelAlbatros1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
-        <div class="card-body">
-          <h6 class="card-title">REELES</h6>
-          <a href="#" class="btn btn-primary">VER TODO</a>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="img/ReelAlbatros1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
+          <div class="card-body">
+            <h5 class="card-title">PESCA</h5>
+            <a href="#" class="btn btn-primary">VER TODO</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="img/Rifle1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
-        <div class="card-body">
-          <h6 class="card-title">RIFLES</h6>
-          <a href="#" class="btn btn-primary">VER TODO</a>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="img/Rifle1.png" class="card-img-top" alt="..." style="width:200px; height:200px">
+          <div class="card-body">
+            <h5 class="card-title">CAZA</h5>
+            <a href="#" class="btn btn-primary">VER TODO</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div>  
 
 <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
 
-<div id="novedades" class="row py-4">
-  <div class="col-md-5 offset-md.2 py-3">
-    <h2>Novedades</h2>
-    <ul class="lista-novedades">
-      {{#each novedades}}
-      <li>
-        <a href="javascript:void(0);" data-toggle="modal" data-target="#Modal{{id}}">
-          <img src="{{imagen}}" style="width:150px; height:100px"> {{titulo}} </a>        
-      </li>
-      {{/each}}
-  </div>
-  <!-- inicio Modal -->
-  {{#each novedades}}
-  <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+<!--INICIA NOVEDADES / TESTIMONIOS-->
+<div class="row my-3"> <!--INICIA NOVEDADES-->
+    <div id="novedades" class="col-md-5 offset-md-2 scroll_selection">
+      <h1>Novedades</h1>      
+      <ul class="lista-novedades">
+        {{#each novedades}}
+        <li>
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#Modal{{id}}">
+            <img src="{{imagen}}" style="width:150px; height:100px"> {{titulo}} </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <!-- inicio Modal -->
+    {{#each novedades}}
+    <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalLabel">{{titulo}}</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5>{{subtitulo}}</h5>
+            <img src="{{imagen}}" style="width:150px; height:100px" />
+            <p>{{cuerpo}}</p>
+          </div>
+        </div>
+      </div>
+    </div> <!--CIERRA NOVEDADES-->
+    {{/each}}
+  <!-- cierro Modal -->
+    <div class="col-md-3 my-3"> <!--INICIA TESTIMONIOS-->
+      <div class="rounded py-5 testimonios">
+        <h1 class="text-center">Testimonios</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonio">
+                <h5>"Tienen los mejores precios del mercado!"</h5>
+                <p>Martín; Mar del Plata, Bs As.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonio">
+                <h5>"Variedad de productos y muy buenos precios"</h5>
+                <p>Luis; Junin, Bs As.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="modal-body">  
-          <h2>{{subtitulo}}</h2>
-          <img src="{{imagen}}" style="width:150px; height:100px" />
-          <p>{{cuerpo}}</p>        
-        </div>        
-      </div>
-    </div>
-  </div>
-  {{/each}}
-  <!-- cierro Modal -->
+    </div> <!--CIERRA TESTIMONIOS-->   
 </div>
 
-
+<!--CIERRA NOVEDADES / TESTIMONIOS-->
 
 <!--INICIA SECCION "VISITANOS" COLUMNA 1-->
-<div id="visitanos" class="row py-4">
+<div id="visitanos" class="row py-4 scroll_selection">
   <!--INICIO MAPA-->
   <div class="col-md-4 offset-md-2">
-    <h2>Visitanos</h2>
+    <h1>Visitanos</h1>
     <div class="mapa">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.481237905274!2d-58.688566818316836!3d-34.642547603169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf0ce6222f59%3A0xe24e927d183a3e41!2sSan%20Ignacio%202049%2C%20Ituzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1737150172704!5m2!1ses!2sar"></iframe>
@@ -103,8 +145,8 @@
   <!--CIERRA SECCION "VISITANOS"-->
 
   <!--INICIA FORMULARIO DE CONTACTO COLUMNA 2-->
-  <div class="col md-4 mt-4 mt-sm-0">
-    <h2>Contactanos</h2>
+  <div id="contacto" class="col md-4 mt-4 mt-sm-0 scroll_selection">
+    <h1>Contactanos</h1>
     <form class="row g-3" action="/" method="post">
       <div class="col-md-6">
         <label for="nombre" class="form-label">Nombre</label>
@@ -145,7 +187,8 @@
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Para realizar una compra deberá comunicarse llenando el formulario, y a la brevedad nos pondremos en contacto.</div>
+      <div class="accordion-body">Para realizar una compra deberá comunicarse llenando el formulario, y a la brevedad
+        nos pondremos en contacto.</div>
     </div>
   </div>
 

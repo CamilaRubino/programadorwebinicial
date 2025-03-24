@@ -23,39 +23,45 @@
 
   <!--inicio menu-->
 
-  <nav class="navbar bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <a class="navbar-brand" href="#">
         <img src="/img/DISTRIBUIDORAMADEIRA.png" alt="Bootstrap" width="150" height="145">
       </a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">BUSCAR</button>
-      </form>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            <a class="nav-link active" aria-current="page" href="inicio">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PRODUCTOS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="camping">CAMPING</a></li>
+              <li><a class="dropdown-item" href="caza">CAZA</a></li>
+              <li><a class="dropdown-item" href="pesca">PESCA</a></li>
+              <li><a class="dropdown-item" href="productos">VER TODO</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PRODUCTOS</a>
+            <a class="nav-link" href="novedades">NOVEDADES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">NOVEDADES</a>
+            <a class="nav-link" href="visitanos">VISITANOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">VISITANOS</a>
+            <a class="nav-link" href="contacto">CONTACTO</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACTANOS</a>
-          </li>
-
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
       </div>
     </div>
   </nav>
