@@ -126,7 +126,7 @@ router.post('/modificar', async (req, res, next) => {
     let img_id = req.body.img_original;
 
     let borrar_img_vieja = false;
-    if (req.body.img_delate === "1") {
+    if (req.body.img_delete === "1") {
       img_id = null;
       borrar_img_vieja = true;
     } else {
